@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+	height: 100%;
+	/* max-height: 600px; */
+	width: 100%;
+	background-color: hsla(200,40%,30%,.4);
+	background-image:		
+		url('img/1.png'), 
+		url('img/2.png'),
+		url('img/3.png'),
+		url('img/4.png'),
+		url('img/5.png');
+	background-repeat: repeat-x;
+	background-position: 
+		0 20%,
+		0 100%,
+		0 50%,
+		0 100%,
+		0 0;
+	background-size: 
+		00px,
+		800px,
+		500px 200px,
+		1000px,
+		400px 260px;
+	animation: 50s para infinite linear;
+	overflow: hidden;
+	}
+
+@keyframes para {
+	100% {
+		background-position: 
+			-5000px 20%,
+			-800px 95%,
+			500px 50%,
+			1000px 100%,
+			400px 0;
+		}
+	}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#container {
+  position: relative;
+  width: 14rem;
+  height: 16rem;
+  margin: auto;
+}
+
+#box {
+  position: relative;
+  height: 12rem;
+  width: 14rem;
+  background: rgba(255, 255, 255, 0.8);
+  display: grid;
+  align-content: center;
+}
+
+#welcome {
+  position: absolute;
+  font-size: 2.5rem;
+  font-weight: 800;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#count {
+  position: absolute;
+  margin: .25rem .3rem;
+  color: #78797B;
+}
+
+#word {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: .2rem 0;
+}
+
+#trans {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Nunito', sans-serif;
+}
+
+#btns {
+  width: 100%;
+  position: absolute;
+  bottom: 1%;
+  margin: auto;
+}
+
+.btn {
+  height: 2.6rem;
+  width: 5.3rem;
+  color: #000;
+  margin: 0 .5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  cursor: none;
+  outline: none;
+} 
+
+
+#speak {
+  position: absolute;
+  height: 2.7rem;
+  width: 2.7rem;
+  bottom: 5%;
+  right: 2%;
+  color: #000;
+  margin: 0 .5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  cursor: none;
+  outline: none;
+}
+
+#speak img {
+  width: 100%;
+  height: 100%;
+}
